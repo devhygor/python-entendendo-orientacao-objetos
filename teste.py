@@ -1,3 +1,6 @@
+#encoding utf-8
+
+
 from conta import Conta
 
 
@@ -9,9 +12,9 @@ def criar_conta(numero, titular, saldo, limite):
 
 def deposita(conta, valor):
     conta["saldo"] += valor
-    
+
 def saca(conta, valor):
     conta["saldo"] -= valor
-    
+
 def extrato(conta):
     print(f"Saldo é {conta['saldo']}")
